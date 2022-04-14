@@ -19,7 +19,7 @@ func main() {
 }
 
 func doSend() {
-	//1、连接服务器
+	//1、连接代理服务器
 	conn, err := net.Dial("tcp", "localhost:9897")
 	defer conn.Close() //思考题：这里不填写会有啥问题？ 无法释放连接
 	if err != nil {
